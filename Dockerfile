@@ -1,4 +1,4 @@
-FROM debian/stable
+FROM debian:stable
 MAINTAINER "Tomáš Pospíšek" <tpo_deb@sourcepole.ch>
 
 RUN echo "force update 2022-04-04.1" && apt-get update && \
