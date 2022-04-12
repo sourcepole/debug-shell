@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-shell
+spec:
+  containers:
+  - image: sourcepole/debug-shell
+    name: debug-shell
+    command: ["bash"]
+    args: ["-c",  "trap : TERM INT; sleep infinity & wait"]
+  restartPolicy: Never
+

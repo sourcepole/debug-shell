@@ -10,3 +10,5 @@ This is such a container.
 
 Check the [Dockerfile](Dockerfile) to see which tools are
 included.
+
+Deploy via `kubectl apply -f debug-shell-pod.yaml`.
