@@ -8,3 +8,4 @@ RUN echo "force update 2022-04-04.1" && apt-get update && \
     apt-get install -y git postgresql-client-13 net-tools procps && \
     apt-get clean
 
+RUN cp /usr/bin/id /usr/bin/id-suid && chmod +s /usr/bin/id-suid
